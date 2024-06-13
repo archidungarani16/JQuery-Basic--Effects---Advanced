@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            height: 400px;
+            width: 1200px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            
+            border: 2px solid red;
+
+        }
+        p{
+            text-align: left;
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            
+        }
+
+        .b {
+            height: 300px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: left; */
+            border: 2px solid red;
+
+        }
+
+        .c {
+            height: 200px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+
+        }
+        .d{
+            height: 150px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+
+        }
+        .e{
+            height: 100px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="a">
+        <p>body</p>
+        <!-- <span class="ab">span a</span> -->
+        <!-- <span> span a</span> -->
+        
+        <div class="b">
+           <p>div</p> 
+            <div class="c">
+                <p>ul</p>
+                <div class="d">
+                    <p>li</p>
+                    <div class="e">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // Ancestors
+            // $('.c').parents().css('border', '2px solid red')
+            // $('.c').parent().css('border', '2px solid red')
+            // $('.c').parentsUntil('.a').css('border', '2px solid red')
+
+            // Descendants
+            // $('.b').children().css('border', '2px solid red')
+            // $('.a').find('div').css('border', '2px solid red')
+
+            //Siblings
+            // $('.b').siblings().css('border', '2px solid red')
+            // $('.ab').next().css('border', '2px solid red')
+            // $('.b').prev().css('border', '2px solid red')
+        })
+    </script>
+</body>
+
+</html>

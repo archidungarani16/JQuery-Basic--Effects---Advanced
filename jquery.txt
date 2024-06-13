@@ -1,0 +1,79 @@
+Q-1.What is jQuery?
+Ans:
+jQuery is a fast, small, and feature-rich JavaScript library. It simplifies things like HTML document traversal and manipulation, event handling, animation, and Ajax interactions for rapid web development. Essentially, jQuery makes it easier to write JavaScript code that works across different browsers by providing a simpler and more concise syntax for common tasks.
+
+Q-2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+Jquery, JQuery Animation?
+Ans:
+To apply CSS using jQuery, add the desired CSS properties as key-value pairs in the css() method. You can target specific elements using selectors.
+// Applying CSS to an element with id "myElement"
+$('#myElement').css({
+    'color': 'red',
+    'font-size': '20px',
+    'background-color': 'yellow'
+});
+
+-->To add or remove classes in jQuery, you can use the addClass() and removeClass() methods, respectively.
+// Adding a class to an element
+$('#myElement').addClass('newClass');
+
+// Removing a class from an element
+$('#myElement').removeClass('oldClass');
+
+-->For jQuery animations, there are various methods available such as fadeIn(), fadeOut(), slideDown(), slideUp(), animate(), etc. Here's an example of using fadeIn() and fadeOut()
+// Fading in an element
+$('#myElement').fadeIn();
+
+// Fading out an element
+$('#myElement').fadeOut();
+
+-->
+ChatGPT
+To apply CSS using jQuery, add the desired CSS properties as key-value pairs in the css() method. You can target specific elements using selectors.
+
+javascript
+Copy code
+// Applying CSS to an element with id "myElement"
+$('#myElement').css({
+    'color': 'red',
+    'font-size': '20px',
+    'background-color': 'yellow'
+});
+To add or remove classes in jQuery, you can use the addClass() and removeClass() methods, respectively.
+
+javascript
+Copy code
+// Adding a class to an element
+$('#myElement').addClass('newClass');
+
+// Removing a class from an element
+$('#myElement').removeClass('oldClass');
+For jQuery animations, there are various methods available such as fadeIn(), fadeOut(), slideDown(), slideUp(), animate(), etc. Here's an example of using fadeIn() and fadeOut():
+
+javascript
+Copy code
+// Fading in an element
+$('#myElement').fadeIn();
+
+// Fading out an element
+$('#myElement').fadeOut();
+And here's an example of using slideDown() and slideUp():
+
+javascript
+Copy code
+// Sliding down an element
+$('#myElement').slideDown();
+
+// Sliding up an element
+$('#myElement').slideUp();
+
+-->You can also use the animate() method for custom animations:
+// Custom animation
+$('#myElement').animate({
+    opacity: 0.25,
+    left: '+=50',
+    height: 'toggle'
+}, 1000, function() {
+    // Animation complete.
+});
+
